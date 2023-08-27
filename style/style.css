@@ -1,3 +1,6 @@
+
+/* FOR ALL PAGE */
+
 *{
     font-family: futura-pt, Arial, Helvetica, sans-serif;
     padding: auto;
@@ -7,7 +10,11 @@
 
 body{
     background-color: white;
+    overflow-x: hidden;
 }
+
+
+
 
 /* NAVBAR START */
 
@@ -24,7 +31,7 @@ body{
     color: #a3a3a3;
     text-align: right;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Futura PT;
+    font-family: futura-pt;
     font-size: 30px;
     font-style: bold;
     font-weight: 500;
@@ -41,7 +48,9 @@ body{
     color: #B11DFF;
 }
 
-/* NAVBAR ENDE */
+/* NAVBAR END */
+
+
 
 /* HEADER START */
 
@@ -51,7 +60,7 @@ body{
 }
 
 #header-text{
-    font-family: Futura PT;
+    font-family: futura-pt;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -63,16 +72,16 @@ body{
     color: #B11DFF;
 }
 
-#btn{
+#first-btn{
     padding-right: 390px ;
     padding-top: 40px;
-    font-family: Futura PT;
+    font-family: futura-pt;
 
 }
 
 .btn:link,
 .btn:visited {
-    font-family: Futura PT;
+    font-family: futura-pt;
     font-weight: 700;
     text-decoration: none;
     padding: 15px 40px;
@@ -139,9 +148,12 @@ body{
 
 /* HEADER END */
 
-/* SECTION START */
 
-.card-body{
+
+
+/* FIRST SECTION START */
+
+.card-body-one{
     width: 400px;
     height: 280px;
     flex-shrink: 0;
@@ -152,8 +164,8 @@ body{
 
 }
 
-.card-title{
-    font-family: Futura PT;
+.card-title-one{
+    font-family: futura-pt;
     color: white;
     font-weight: 700;
     font-size: 100px;
@@ -163,8 +175,8 @@ body{
 
 }
 
-.card-text{
-    font-family: Futura PT;
+.card-text-one{
+    font-family: futura-pt;
     color: white;
     font-size: 27px;
     text-align: left;
@@ -172,10 +184,101 @@ body{
 
 }
 
-.card-icon{
+.card-icon-one{
     width: 80px;
     margin-left: 100px;
 
 }
 
+.card-one{
+    margin-right: 215px;
+}
 
+/* FIRST SECTION END */
+
+
+
+
+/* SECOND SECTION START */
+
+#nao_espere{
+    margin-top: 150px;
+    margin-left: 200px;
+
+}
+
+#card-body-two{
+    margin-top: 150px;
+    margin-right: 200px;
+}
+ 
+#card-title-two{
+    text-align: right;
+    font-size: 70.079px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+#card-text-two{
+    text-align: right;
+    font-size: 40px;
+    font-weight: 450;
+    line-height: 64px;
+    color: #757575;
+}
+
+#second-btn{
+    font-family: futura-pt;
+    padding-top: 40px;
+    justify-content: right;
+    margin-left: 230px;
+}
+
+/* SECOND SECTION END */
+
+
+
+/* THIRD SECTION START */
+
+#section_three{
+    margin-top: 50px;
+}
+
+#rectangle{
+    margin-left: 30px;
+
+}
+
+
+#card-title-three{
+    color: #FFF;
+    font-family: futura-pt;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px; /* 100% */
+    text-align: left;
+    justify-content: center;
+}
+
+#card-text-three{
+    color: #F1D8FF;
+    font-family: futura-pt;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* 160% */
+    text-align: left;
+
+}
+
+#ponto1{
+    color: #E0A5FF;
+}
+
+#cellphone{
+    margin-top: 20px;
+    padding-right: 100px;
+}
+
+/* THIRD SECTION END */
