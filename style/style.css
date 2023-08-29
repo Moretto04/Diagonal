@@ -245,7 +245,7 @@ body{
 }
 
 #rectangle{
-    margin-left: 30px;
+    margin-left: 10px;
 
 }
 
@@ -282,3 +282,44 @@ body{
 }
 
 /* THIRD SECTION END */
+
+
+
+/* FOURTH SECTION START */
+
+#card-title-four{
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+#card-text-four{
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 450;
+    margin-top: 30px;
+    color:#757575;
+    
+}
+
+#third-btn{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: futura-pt;
+    padding-top: 70px;
+    margin-right: 210px;
+}
+
+/* FOURTH SECTION END */
+
+
+
+
+/* FOOTER START */
+
+footer{
+    margin-top: 200px;
+}
