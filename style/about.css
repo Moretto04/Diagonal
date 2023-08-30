@@ -1,0 +1,131 @@
+* {
+    font-family: futura-pt, Arial, Helvetica, sans-serif;
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+  
+/* NAVBAR START */
+  
+#logo {
+    margin-left: 215px;
+}
+  
+.navbar {
+    background-color: white;
+    height: 200px;
+}
+  
+.nav-link {
+    color: #a3a3a3;
+    text-align: right;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: futura-pt;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 20px; /* 50% */
+    letter-spacing: 0.13px;
+}
+  
+.navbar-nav {
+    margin-right: 215px;
+    gap: 80px;
+}
+
+
+.nav-link:hover {
+    color: #e0a5ff;
+}
+  
+.nav-link-active {
+    color: #b11dff;
+    text-align: right;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: futura-pt;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 20px; /* 50% */
+    letter-spacing: 0.13px;
+}
+  
+/* NAVBAR END */
+
+/* HEADER START */
+
+#header{
+    margin-left: 210px;
+    margin-top: 100px;
+}
+
+#header-text{
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    padding-right: 200px;
+}
+
+i{
+    text-decoration: none;
+    font-style: normal;
+    color: #B11DFF;
+}
+
+#header-image{
+    padding-left: 280px;
+    margin-top: 50px;
+}
+
+#img{
+    width: 100px;
+
+}
+
+/* HEADER END */
+
+
+
+/* FIRST SECTION START */
+#card-body-one{
+    margin-left: 230px;
+
+}
+
+#card-title-one{
+    color: black;
+    font-size: 50px;
+    text-align: left;
+    font-weight: 700;
+
+}
+
+
+#card-subtitle-one{
+    color:#B11DFF;
+    text-align: left;
+    font-size: 48px;
+    font-weight: 500;
+
+}
+
+
+#card-text-one{
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 40px;
+    
+}
+
+#first-section-col{
+    display: flex;
+    margin-top: 150px;
+}
+ 
