@@ -19,8 +19,20 @@ body {
 }
 
 .navbar {
+  top: 0;
+  width: 100%;
   background-color: white;
-  height: 200px;
+  padding: 32px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Estilo CSS para a barra de navegação quando rolada */
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0px 5px 16px rgba(177, 29, 255, 0.1);
 }
 
 .nav-link {
@@ -68,7 +80,7 @@ body {
 
 #header {
   margin-right: 215px;
-  margin-top: 64px;
+  margin-top: 256px;
 }
 
 .headercol {
@@ -80,10 +92,10 @@ body {
   padding-left: 16px;
   margin-left: 16px;
   font-family: futura-pt-bold;
-  font-size: 64px;
+  font-size: 94px;
   font-style: normal;
   font-weight: 700;
-  line-height: 70px; /* 109.375% */
+  line-height: 94px; /* 109.375% */
   text-align: left;
 }
 
@@ -387,4 +399,51 @@ body {
 
 .copyright {
   background-color: #191919;
+}
+
+.custom-icon {
+  font-size: 32px;
+  position: relative;
+  left: 0;
+  top: 50%; /* Defina o topo para 50% para alinhar verticalmente */
+  transform: translateY(
+    -50%
+  ); /* Use translateY para ajustar o alinhamento vertical */
+  transition: transform 0.3s ease;
+
+  /* Outras propriedades de estilo, se necessário */
+}
+
+/* Se você precisar de mais especificidade, pode adicionar outras seletores, por exemplo: */
+
+#first-btn .custom-icon {
+  font-size: 32px;
+}
+
+#first-btn:hover .custom-icon {
+  transform: translateX(16px) translateY(-16px);
+}
+
+#second-btn .custom-icon {
+  font-size: 32px;
+}
+
+#second-btn:hover .custom-icon {
+  transform: translateX(16px) translateY(-16px);
+}
+
+#third-btn .custom-icon {
+  font-size: 32px;
+}
+
+#third-btn:hover .custom-icon {
+  transform: translateX(16px) translateY(-16px);
+}
+
+.nav-btn .custom-icon {
+  font-size: 32px;
+}
+
+.nav-btn:hover .custom-icon {
+  transform: translateX(16px) translateY(-16px);
 }
