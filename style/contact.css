@@ -1,0 +1,409 @@
+* {
+    font-family: futura-pt, Arial, Helvetica, sans-serif;
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR START */
+
+#logo {
+    margin-left: 215px;
+}
+  
+.navbar {
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 32px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: fixed;
+    z-index: 1000;
+}
+  
+.navbar.scrolled {
+    background-color: white;
+    box-shadow: 0px 5px 16px rgba(177, 29, 255, 0.1);
+}
+  
+.nav-link {
+    color: #a3a3a3;
+    text-align: right;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: futura-pt;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 20px; /* 50% */
+    letter-spacing: 0.13px;
+}
+  
+.navbar-nav {
+    margin-right: 215px;
+    gap: 80px;
+}
+  
+.nav-link:hover {
+    color: #e0a5ff;
+}
+  
+.nav-link-active {
+    color: #b11dff;
+    text-align: right;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: futura-pt;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 20px; /* 50% */
+    letter-spacing: 0.13px;
+}
+
+i {
+    text-decoration: none;
+    font-style: normal;
+    color: #b11dff;
+}
+  
+/* NAVBAR END */
+
+/* HEADER START */
+
+
+#header {
+    margin-top: 300px;
+}
+  
+#card-title-one {
+    color: black;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 100% */
+    text-align: left;
+    justify-content: center;
+    margin-top: 100px;
+}
+  
+.title-three-pad {
+    padding: 32px;
+}
+  
+#card-text-one {
+    color: #757575;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 160% */
+    text-align: justify;
+    margin-top: 20px;
+}
+  
+#header_image {
+    width: 600px;
+
+}
+
+/* HEADER END */
+
+
+/* FIRST SECTION START */
+
+
+/* First form */
+.form {
+    margin-top: 200px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 600px;
+}
+  
+.title {
+    color: #B11DFF;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+  
+  
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+  
+.ic1 {
+    margin-top: 40px;
+}
+  
+.ic2 {
+    margin-top: 30px;
+}
+  
+.input {
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: black;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+  
+.cut {
+    background-color: transparent;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+  
+.cut-short {
+    width: 50px;
+}
+  
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+  
+.placeholder {
+    color: black;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+    background-color: transparent;
+}
+  
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+  
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+}
+  
+.input:focus ~ .placeholder {
+    color:  #B11DFF;
+}
+  
+.submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    /* //outline: 0; */
+    text-align: center;
+    width: 100%;
+}
+  
+.submit:active {
+    background-color: #06b;
+}
+/* first form end */
+
+
+
+/* second form */
+.title-2{
+    color: black;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+  
+  
+.input-container-2{
+    height: 300px;
+    position: relative;
+    width: 600px;
+}
+/* second form end */
+  
+
+
+
+/* FIRST SECTION END */
+
+
+/* FOOTER START */
+
+.footer {
+    margin-top: 200px;
+    background-color: #f2f2f2;
+    color: #191919;
+    font-family: futura-pt;
+    font-size: 16px;
+    font-weight: 400;
+}
+  
+.footer-title {
+    color: #b11dff;
+    font-family: futura-pt;
+    font-size: 16px;
+    font-weight: 500;
+}
+  
+.direitos {
+    color: #e0a5ff;
+    font-family: futura-pt;
+    font-size: 16px;
+    font-weight: 500;
+}
+  
+.diagonal {
+    color: #fff;
+    text-decoration: none;
+}
+  
+.copyright {
+    background-color: #191919;
+}
+  
+/* FOOTER END */
+
+
+
+
+
+
+
+/* BUTTON START */
+
+.custom-icon {
+    font-size: 32px;
+    position: relative;
+    left: 0;
+    top: 50%; /* Defina o topo para 50% para alinhar verticalmente */
+    transform: translateY(
+      -50%
+    ); /* Use translateY para ajustar o alinhamento vertical */
+    transition: transform 0.3s ease;
+  
+    /* Outras propriedades de estilo, se necessário */
+}
+  
+/* Se você precisar de mais especificidade, pode adicionar outras seletores, por exemplo: */
+  
+#jornada .custom-icon {
+    font-size: 32px;
+}
+  
+#jornada:hover .custom-icon {
+    transform: translateX(16px) translateY(-16px);
+}
+  
+.nav-btn .custom-icon {
+    font-size: 32px;
+}
+  
+.nav-btn:hover .custom-icon {
+    transform: translateX(16px) translateY(-16px);
+}
+
+#btn{
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+  font-family: futura-pt;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 64px;
+  transition: all 0.2s;
+  font-size: x-large;
+  background-color: #b11dff;
+  color: #fff;
+  text-align: center;
+  display: inline-flex;
+  height: 64px;
+  padding: 32px 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.btn:hover {
+  background-color: #e0a5ff;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #b11dff;
+  color: #ffff;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #b11dff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
