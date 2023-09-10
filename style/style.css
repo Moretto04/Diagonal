@@ -190,6 +190,10 @@ body {
 
 /* FIRST SECTION START */
 
+section{
+  margin-right: 80px;
+}
+
 .card-body-one {
   width: 448px;
   height: 320px;
