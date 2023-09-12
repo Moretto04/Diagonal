@@ -27,304 +27,323 @@
 
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+  <!-- preloader -->
+  <div id="loader"></div>
 
 
 
   <!-- NAVBAR START -->
-
-  <nav class="navbar navbar-expand-md navbar-light bg-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" id="logo" href="index.html"><img src="images/Logo.png" alt="logo diagonal"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link nav-link-active" aria-current="page" href="index.html">Home</a>
-          <a class="nav-link" href="about.html">Sobre nós</a>
-          <a class="nav-link" href="contact.html">Contato</a>
-          <a href="#" class="btn nav-btn">Comece já <span class="material-icons custom-icon">
-              arrow_right_alt
-            </span></a>
-
-
-          <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- NAVBAR END -->
+  <div style="display: none;" id="wrapper" class="fadeIn">
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="logo" href="#"><img src="images/Logo.png" alt="logo diagonal"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link nav-link-active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="about.html">Sobre nós</a>
+            <a class="nav-link" href="#">Contato</a>
+            <a href="#" class="btn nav-btn">Comece já <span class="material-icons custom-icon">
+                arrow_right_alt
+              </span></a>
 
 
-
-  <!-- HEADER START -->
-
-  <header>
-    <div id="header">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-1 headercol">
-            <img class="barra" src="images/Icone.png" alt="">
-          </div>
-          <div class="col headercol">
-            <h1 id="header-text">Transformando ideias em Tecnologia<a id="ponto">.</a></h1>
-            <div id="first-btn">
-              <a href="#" class="btn">Comece já <span class="material-icons custom-icon">
-                  arrow_right_alt
-                </span></a>
-            </div>
-          </div>
-          <div class="col-4">
-            <video autoplay loop muted>
-              <source type="video/mp4" src="images/banner.mp4" class="center-block img-responsive bannerimg">
-            </video>
-            <!-- <img src="images/banner.gif" class="center-block img-responsive bannerimg" alt=""> -->
+            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </nav>
 
-  <!-- HEADER END -->
+    <!-- NAVBAR END -->
 
 
-  <!-- FIRST SECTION START -->
 
-  <section>
-    <div class="container-fluid justify-content-center gx-0 ">
-      <div class="row">
-        <div class="col">
-          <div class="card mb-3 border-0 card-one" style="width: 18rem;">
-            <div class="card-body card-body-one">
-              <h2 class="card-title card-title-one">01 <svg class="card-icon" id="card-icon-one" xmlns="http://www.w3.org/2000/svg" width="106" height="110" viewBox="0 0 106 110" fill="none">
-                  <path d="M77.725 70.938H72.8131L71.0721 69.1969C78.5333 60.1689 82.3883 47.8522 80.2743 34.7617C77.352 16.8347 62.9269 2.51896 45.5174 0.326461C19.2166 -3.02678 -2.91843 19.93 0.314774 47.2073C2.42879 65.2633 16.2321 80.2239 33.5173 83.2547C46.1392 85.4472 58.015 81.4491 66.7197 73.7108L68.3985 75.5164V80.6108L94.8237 108.017C97.3729 110.661 101.539 110.661 104.088 108.017C106.637 105.373 106.637 101.053 104.088 98.4087L77.725 70.938ZM40.4189 70.938C24.9368 70.938 12.4393 57.9764 12.4393 41.9195C12.4393 25.8627 24.9368 12.9011 40.4189 12.9011C55.9009 12.9011 68.3985 25.8627 68.3985 41.9195C68.3985 57.9764 55.9009 70.938 40.4189 70.938Z" fill="#D077FF" />
-                </svg></h2>
-              <p class="card-text card-text-one">Descobertas e <br />
-                Planejamentos</p>
+    <!-- HEADER START -->
+
+    <header>
+      <div id="header">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-1 headercol">
+              <img class="barra" src="images/Icone.png" alt="">
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-3 border-0 card-one" style="width: 18rem;">
-            <div class="card-body card-body-one">
-              <h2 class="card-title card-title-one">02 <svg class="card-icon" id="card-icon-one" xmlns="http://www.w3.org/2000/svg" width="119" height="122" viewBox="0 0 119 122" fill="none">
-                  <path d="M107.729 64.279L103.679 61.1003C103.679 60.6462 103.679 60.4444 103.679 59.9903L107.63 56.8117C108.421 56.2063 108.618 55.0963 108.124 54.2385L103.926 46.7713C103.58 46.1154 102.888 45.7622 102.197 45.7622C101.95 45.7622 101.703 45.8126 101.456 45.9136L96.7635 47.8308C96.3684 47.5785 96.2202 47.4776 95.825 47.2758L95.0841 42.1799C94.9359 41.1204 94.0962 40.3636 93.1084 40.3636H84.6619C83.674 40.3636 82.8343 41.1204 82.6862 42.079L81.9946 47.1749C81.8465 47.2758 81.6489 47.3263 81.5007 47.4272C81.3525 47.5281 81.2043 47.629 81.0561 47.7299L76.3637 45.8126C76.1167 45.7117 75.8697 45.6613 75.6228 45.6613C74.9313 45.6613 74.2891 46.0145 73.894 46.6704L69.6955 54.1376C69.2015 54.9953 69.3991 56.1054 70.1894 56.7108L74.1409 59.8894V61.0499L70.1894 64.2285C69.3991 64.834 69.2015 65.944 69.6955 66.8017L73.894 74.2689C74.2397 74.9249 74.9313 75.278 75.6228 75.278C75.8697 75.278 76.1167 75.2276 76.3637 75.1267L81.0561 73.2599C81.4513 73.5121 81.6489 73.613 82.044 73.8149L82.7849 78.9108C82.9331 79.9198 83.7728 80.6262 84.7607 80.6262H93.2071C94.195 80.6262 95.0347 79.8694 95.1829 78.9108L95.9238 73.8149C96.072 73.7139 96.2696 73.6635 96.4178 73.5626C96.5659 73.4617 96.7141 73.3608 96.8623 73.2599L101.555 75.1771C101.802 75.278 102.049 75.3285 102.296 75.3285C102.987 75.3285 103.629 74.9753 104.024 74.3194L108.223 66.8521C108.717 65.9944 108.519 64.8844 107.729 64.279ZM88.9098 68.1135C84.8101 68.1135 81.5007 64.7331 81.5007 60.5453C81.5007 56.3576 84.8101 52.9772 88.9098 52.9772C93.0096 52.9772 96.319 56.3576 96.319 60.5453C96.319 64.7331 93.0096 68.1135 88.9098 68.1135ZM83.9704 90.818H34.5761V30.2727H83.9704V35.3181H93.8493V15.1364C93.8493 9.58637 89.4038 5.04547 83.9704 5.04547H34.5761C29.1428 5.04547 24.6973 9.58637 24.6973 15.1364V105.954C24.6973 111.504 29.1428 116.045 34.5761 116.045H83.9704C89.4038 116.045 93.8493 111.504 93.8493 105.954V85.7726H83.9704V90.818ZM34.5761 15.1364H83.9704V20.1818H34.5761V15.1364ZM83.9704 105.954H34.5761V100.909H83.9704V105.954Z" fill="#D077FF" />
-                </svg></h2>
-              <p class="card-text card-text-one">Design e <br />
-                Desenvolvimento</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-3 border-0 card-one" style="width: 18rem;">
-            <div class="card-body card-body-one">
-              <h2 class="card-title card-title-one">03 <svg class="card-icon" id="card-icon-one" xmlns="http://www.w3.org/2000/svg" width="101" height="105" viewBox="0 0 101 105" fill="none">
-                  <path d="M37.6425 82.8976C34.914 91.4062 28.412 97.657 18.8391 100.974C14.5453 102.45 10.0671 103.266 5.54639 103.394C4.48498 103.394 3.46706 102.956 2.71653 102.176C1.966 101.395 1.54433 100.337 1.54428 99.2338C1.66819 94.534 2.45245 89.8784 3.87217 85.4146C7.06331 75.4623 13.0758 68.7029 21.2603 65.8665C21.759 65.6933 22.2856 65.624 22.8101 65.6624C23.3346 65.7009 23.8467 65.8464 24.317 66.0907C24.7874 66.335 25.2069 66.6732 25.5515 67.0861C25.896 67.499 26.159 67.9784 26.3253 68.497C26.4916 69.0155 26.558 69.5631 26.5206 70.1083C26.4833 70.6535 26.343 71.1858 26.1077 71.6746C25.8725 72.1635 25.5468 72.5993 25.1495 72.9573C24.7521 73.3153 24.2908 73.5883 23.7919 73.7609C13.9576 77.1686 10.9115 88.2657 9.96962 94.6359C16.094 93.6567 26.7705 90.4902 30.0486 80.2662C30.2145 79.7474 30.4771 79.2677 30.8214 78.8545C31.1657 78.4413 31.5849 78.1027 32.0552 77.858C32.5254 77.6133 33.0374 77.4673 33.5619 77.4285C34.0865 77.3896 34.6132 77.4586 35.1121 77.6314C35.611 77.8043 36.0722 78.0777 36.4694 78.4359C36.8666 78.7942 37.192 79.2303 37.427 79.7194C37.662 80.2085 37.802 80.7409 37.8389 81.2862C37.8759 81.8315 37.8092 82.3791 37.6425 82.8976ZM87.6142 43.3356L83.1265 48.0011V79.8584C83.1293 80.9515 82.9237 82.0343 82.5213 83.0442C82.119 84.0541 81.5279 84.9711 80.7825 85.742L64.603 102.562C63.5786 103.628 62.2953 104.384 60.89 104.75C59.4847 105.116 58.0101 105.079 56.6234 104.643C55.2367 104.207 53.99 103.387 53.0162 102.272C52.0424 101.156 51.378 99.7874 51.0939 98.3104L47.1384 77.7491L26.2125 55.9945L6.43455 51.8821C5.01395 51.5867 3.6971 50.8961 2.6244 49.8838C1.55171 48.8715 0.763399 47.5755 0.343531 46.1341C-0.0763379 44.6926 -0.11202 43.1597 0.240288 41.6988C0.592595 40.2379 1.31968 38.9038 2.34402 37.8388L18.5235 21.0183C19.2652 20.2433 20.1473 19.6288 21.1189 19.2105C22.0904 18.7922 23.1321 18.5783 24.1837 18.5812H54.827L59.3146 13.9157C73.6161 -0.951409 88.2908 -0.520213 93.9374 0.355644C95.6323 0.611362 97.2022 1.42968 98.4133 2.68861C99.6244 3.94753 100.412 5.57964 100.658 7.34162C101.5 13.2113 101.916 28.4677 87.6142 43.3356ZM8.00424 43.7226L26.8703 47.6451L46.8228 26.9024H24.1837L8.00424 43.7226ZM33.8455 52.1617L50.8252 69.8139L81.954 37.4517C85.8608 33.3902 94.7327 22.4454 92.7414 8.5702C79.4043 6.51478 68.8812 15.7385 64.9748 19.7999L33.8455 52.1617ZM75.1223 56.3226L55.1697 77.0655L58.9428 96.6786L75.1222 79.8584L75.1223 56.3226Z" fill="#D077FF" />
-                </svg></h2>
-              <p class="card-text card-text-one">Testes e <br />
-                Lançamentos</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FIRST SECTION END -->
-
-
-  <!-- SECOND SECTION START -->
-
-
-  <section>
-    <div class="justify-content-center text-center">
-      <div class="row row-cols-auto naoesperemargem">
-        <div class="col">
-          <img src="images/icones.png" id="nao_espere" alt="">
-        </div>
-        <div class="col-6">
-          <div class="card mb-3 border-0" style="background: none;">
-            <div class="card-body" id="card-body-two">
-              <h2 class="card-title" id="card-title-two">Não espere mais<a id="ponto">.</a></h2>
-              <p class="card-text" id="card-text-two">Deixe-nos moldar sua visão em<br>uma experiência incrível!
-              </p>
-              <div id="second-btn">
-                <a href="#" class="btn">Saiba mais <span class="material-icons custom-icon">
+            <div class="col headercol">
+              <h1 id="header-text">Transformando ideias em Tecnologia<a id="ponto">.</a></h1>
+              <div id="first-btn">
+                <a href="#" class="btn">Comece já <span class="material-icons custom-icon">
                     arrow_right_alt
                   </span></a>
               </div>
             </div>
+            <div class="col-4">
+              <video autoplay loop muted>
+                <source type="video/mp4" src="images/banner.mp4" class="center-block img-responsive bannerimg">
+              </video>
+              <!-- <img src="images/banner.gif" class="center-block img-responsive bannerimg" alt=""> -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
+
+    <!-- HEADER END -->
 
 
-  <!-- SECOND SECTION END -->
+    <!-- FIRST SECTION START -->
 
-
-  <!-- THIRD SECTION START -->
-
-
-  <section id="section_three">
-    <div id="rectangle" class="rectangle">
-      <div class="justify-content-center text-center">
-        <div class="row row-cols-auto">
-          <div class="col">
-            <img id="cellphone" src="images/undraw_app_installation_re_h36x (1) 1.png" alt="">
+    <section id="cardsgrid">
+      <div class="row">
+        <div class="cardsgridstyle col">
+          <div class="row">
+            <div class="col">
+              <h1>01</h1>
+              <p>Descobertas e planejamentos</p>
+            </div>
+            <div class="col">
+              <img class="iconescards" src="images/lupa.svg" alt="lupa">
+            </div>
           </div>
-          <div class="col-6 title-three-pad">
+        </div>
+
+        <div class="cardsgridstyle col">
+          <div class="row">
+            <div class="col">
+              <h1>02</h1>
+              <p>Design e
+                Desenvolvimento</p>
+            </div>
+            <div class="col">
+              <img class="iconescards" src="images/celular.svg" alt="lupa">
+            </div>
+          </div>
+        </div>
+
+        <div class="cardsgridstyle col">
+          <div class="row">
+            <div class="col">
+              <h1>03</h1>
+              <p>Testes e
+                Lançamentos</p>
+            </div>
+            <div class="col">
+              <img class="iconescards" src="images/foguete.svg" alt="lupa">
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- FIRST SECTION END -->
+
+
+    <!-- SECOND SECTION START -->
+
+
+    <section>
+      <div class="justify-content-center text-center">
+        <div class="row row-cols-auto naoesperemargem">
+          <div class="col">
+            <img src="images/icones.png" id="nao_espere" alt="">
+          </div>
+          <div class="col-6">
             <div class="card mb-3 border-0" style="background: none;">
-              <div class="card-body">
-                <h2 class="card-title" id="card-title-three">Desperte o potencial<a id="ponto1">.</a></h2>
-                <p class="card-text" id="card-text-three">Com um site e app centrados no usuário, você multiplica as vendas, alcança diversos públicos e oferece uma experiência contínua, catalisando o crescimento do seu negócio.</p>
+              <div class="card-body" id="card-body-two">
+                <h2 class="card-title" id="card-title-two">Não espere mais<a id="ponto">.</a></h2>
+                <p class="card-text" id="card-text-two">Deixe-nos moldar sua visão em<br>uma experiência incrível!
+                </p>
+                <div id="second-btn">
+                  <a href="#" class="btn">Saiba mais <span class="material-icons custom-icon">
+                      arrow_right_alt
+                    </span></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
-
-  <!-- THIRD SECTION END -->
-
-  <!-- FOURTH SECTION START -->
+    <!-- SECOND SECTION END -->
 
 
-  <section>
-    <div class="justify-content-center text-center">
-      <h1 class="section-fourth-title">
-        Pronto para Transformar <br>
-        sua Ideia em Realidade<a id="ponto">?</a>
-      </h1>
-      <p class="section-fourth-text">Desbloqueie novas oportunidades de crescimento com soluções<br> inovadoras para o sucesso da sua empresa com a <b style="color: #b11dff;">Diagonal.<b></p>
-      <div id="third-btn" class="">
-        <a href="#" class="btn">Inciar jornada <span class="material-icons custom-icon">
-            arrow_right_alt
-          </span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOURTH SECTION EDN -->
+    <!-- THIRD SECTION START -->
 
 
-  <!-- FOOTER START -->
-  <footer class="text-center text-lg-start bg-light text-muted">
-    <section class="p-4 border-bottom footer">
-      <div class="container text-center text-md-start mt-5">
-        <!-- GRID ROW -->
-        <div class="row mt-3">
-          <!-- Grid COLUMN -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- CONTENT -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <img src="images/Logo.png" alt="">
-            </h6>
-            <p>
-              <b>Conectando Sonhos, Codificando Realidades:</b> Somos os arquitetos dos apps que te surpreendem. Misturamos códigos com paixão, construindo experiências digitais que encantam. Vamos criar algo incrível juntos?
-            </p>
+    <section id="section_three">
+      <div id="rectangle" class="rectangle">
+        <div class="justify-content-center text-center">
+          <div class="row row-cols-auto">
+            <div class="col">
+              <img id="cellphone" src="images/undraw_app_installation_re_h36x (1) 1.png" alt="">
+            </div>
+            <div class="col-6 title-three-pad">
+              <div class="card mb-3 border-0" style="background: none;">
+                <div class="card-body">
+                  <h2 class="card-title" id="card-title-three">Desperte o potencial<a id="ponto1">.</a></h2>
+                  <p class="card-text" id="card-text-three">Com um site e app centrados no usuário, você multiplica as vendas, alcança diversos públicos e oferece uma experiência contínua, catalisando o crescimento do seu negócio.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- GRID COLUMN -->
-
-          <!-- GRID COLUMN -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- LINKS -->
-            <h6 class="text-uppercase fw-bold mb-4 footer-title">
-              ?????
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">??????</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">??????</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">??????</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">??????</a>
-            </p>
-          </div>
-          <!-- GRID COLUMN -->
-
-          <!-- GRID COLUMN -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- LINKS-->
-            <h6 class="text-uppercase fw-bold mb-4 footer-title">
-              ??????
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">??????</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">??????</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">??????</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">??????</a>
-            </p>
-          </div>
-          <!-- GRID COLUMN -->
-
-          <!-- GRID COLUMN -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- LINKS START -->
-            <h6 class="text-uppercase fw-bold mb-4 footer-title">Contato</h6>
-            <p><i class="fas fa-home me-3"></i> São Paulo, ??????, SP</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              diagonal@??????.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> ??????</p>
-            <p><i class="fas fa-print me-3"></i> ??????</p>
-          </div>
-          <!-- GRID COLUMN -->
         </div>
-        <!-- GRID ROW -->
       </div>
     </section>
-    <!-- SECTION LINKS END  -->
 
-    <!-- COPYRIGHT START -->
-    <div class="text-center p-4 copyright">
-      <p class="direitos">© 2023:
-        <a class="text-reset fw-bold diagonal" href="#">Diagonal®️</a>
-        - Todos os Direitos Reservados
-      </p>
-    </div>
-    <!-- COPYRIGHT END -->
-  </footer>
 
+
+    <!-- THIRD SECTION END -->
+
+    <!-- FOURTH SECTION START -->
+
+
+    <section>
+      <div class="justify-content-center text-center">
+        <h1 class="section-fourth-title">
+          Pronto para Transformar <br>
+          sua Ideia em Realidade<a id="ponto">?</a>
+        </h1>
+        <p class="section-fourth-text">Desbloqueie novas oportunidades de crescimento com soluções<br> inovadoras para o sucesso da sua empresa com a <b style="color: #b11dff;">Diagonal.<b></p>
+        <div id="third-btn" class="">
+          <a href="#" class="btn">Inciar jornada <span class="material-icons custom-icon">
+              arrow_right_alt
+            </span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOURTH SECTION EDN -->
+
+
+    <!-- FOOTER START -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <section class="p-4 border-bottom footer">
+        <div class="container text-center text-md-start mt-5">
+          <!-- GRID ROW -->
+          <div class="row mt-3">
+            <!-- Grid COLUMN -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- CONTENT -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img src="images/Logo.png" alt="">
+              </h6>
+              <p>
+                <b>Conectando Sonhos, Codificando Realidades:</b> Somos os arquitetos dos apps que te surpreendem. Misturamos códigos com paixão, construindo experiências digitais que encantam. Vamos criar algo incrível juntos?
+              </p>
+            </div>
+            <!-- GRID COLUMN -->
+
+            <!-- GRID COLUMN -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- LINKS -->
+              <h6 class="text-uppercase fw-bold mb-4 footer-title">
+                ?????
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">??????</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">??????</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">??????</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">??????</a>
+              </p>
+            </div>
+            <!-- GRID COLUMN -->
+
+            <!-- GRID COLUMN -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- LINKS-->
+              <h6 class="text-uppercase fw-bold mb-4 footer-title">
+                ??????
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">??????</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">??????</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">??????</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">??????</a>
+              </p>
+            </div>
+            <!-- GRID COLUMN -->
+
+            <!-- GRID COLUMN -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- LINKS START -->
+              <h6 class="text-uppercase fw-bold mb-4 footer-title">Contato</h6>
+              <p><i class="fas fa-home me-3"></i> São Paulo, ??????, SP</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                diagonal@??????.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> ??????</p>
+              <p><i class="fas fa-print me-3"></i> ??????</p>
+            </div>
+            <!-- GRID COLUMN -->
+          </div>
+          <!-- GRID ROW -->
+        </div>
+      </section>
+      <!-- SECTION LINKS END  -->
+
+      <!-- COPYRIGHT START -->
+      <div class="text-center p-4 copyright">
+        <p class="direitos">© 2023:
+          <a class="text-reset fw-bold diagonal" href="#">Diagonal®️</a>
+          - Todos os Direitos Reservados
+        </p>
+      </div>
+      <!-- COPYRIGHT END -->
+    </footer>
+  </div>
 
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
 
-<script>
-  // Obtém a barra de navegação
-  const navbar = document.querySelector('.navbar');
+  <script>
+    // Obtém a barra de navegação
+    const navbar = document.querySelector('.navbar');
 
-  // Adiciona um ouvinte de evento de rolagem à janela
-  window.addEventListener('scroll', () => {
-    // Verifica a posição de rolagem atual
-    if (window.scrollY > 0) {
-      // Se a posição de rolagem for maior que 0, adiciona uma classe que controla a sombra
-      navbar.classList.add('scrolled');
-    } else {
-      // Caso contrário, remove a classe que controla a sombra
-      navbar.classList.remove('scrolled');
+    // Adiciona um ouvinte de evento de rolagem à janela
+    window.addEventListener('scroll', () => {
+      // Verifica a posição de rolagem atual
+      if (window.scrollY > 0) {
+        // Se a posição de rolagem for maior que 0, adiciona uma classe que controla a sombra
+        navbar.classList.add('scrolled');
+      } else {
+        // Caso contrário, remove a classe que controla a sombra
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
     }
-  });
-</script>
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("wrapper").style.display = "block";
+    }
+  </script>
+
+</body>
 
 </html>
