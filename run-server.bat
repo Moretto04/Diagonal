@@ -1,8 +1,8 @@
-@ECHO OFF
-SET COMPOSE_COMMAND="docker compose"
+
+SET COMPOSE_COMMAND=docker compose
 %COMPOSE_COMMAND% version >nul 2>&1
 IF %ERRORLEVEL% EQU 9009 (
-    SET COMPOSE_COMMAND="docker-compose"
+    SET COMPOSE_COMMAND=docker-compose
     %COMPOSE_COMMAND% version >nul 2>&1
     IF %ERRORLEVEL% EQU 9009 (
         ECHO "Neither Docker Compose (plugin) or Docker-Compose (standalone) were found."
@@ -13,12 +13,12 @@ IF %ERRORLEVEL% EQU 9009 (
 )
 SET compose_file_custom="%~dp0\docker-compose.local.yml"
 set compose_file_dist="%~dp0\.docker\docker-compose.yml"
-set env_file="--env-file %~dp0\.docker\.env"
+set env_file=--env-file "%~dp0\.docker\.env"
 
 IF EXIST %compose_file_custom% (
-    SET compose_file="-f %compose_file_dist% -f %compose_file_custom% "
+    SET compose_file=-f %compose_file_dist% -f %compose_file_custom%
 ) ELSE (
-    SET compose_file="-f %compose_file_dist%"
+    SET compose_file=-f %compose_file_dist%
 )
 
-%COMPOSE_EXECUTABLE% %compose_file% %env_file% up %*
+%COMPOSE_COMMAND% %compose_file% %env_file% up %*
