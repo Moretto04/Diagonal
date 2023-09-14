@@ -12,19 +12,18 @@ init() {
         fi
     fi
     self=$(which "$0")
-    self_path=$(dirname "$(realpath "$self")")
-    project_path=$(dirname "$self_path")
-    compose_file_custom="${project_path}/docker-compose.local.yml"
+    project_path=$(dirname "$(realpath "$self")")
+    compose_file_custom="./docker-compose.local.yml"
     compose_file_dist="${project_path}/.docker/docker-compose.yml"
-    env_file="--env-file ${project_path}/.docker/.env"
+    env_file="--env-file=${project_path}/.docker/.env"
 
     if [ -f "${compose_file_custom}" ]; then
-        compose_file="-f $compose_file_dist -f $compose_file_custom "
+        compose_file=(-f "$compose_file_dist" -f "$compose_file_custom")
     else
-        compose_file="-f $compose_file_dist"
+        compose_file=(-f "$compose_file_dist")
     fi
 }
 
 init
 
-${COMPOSE_EXECUTABLE} $compose_file $env_file up "$@"
+${COMPOSE_EXECUTABLE} "${compose_file[@]}" "$env_file" up "$@"
